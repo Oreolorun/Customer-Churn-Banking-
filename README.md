@@ -7,7 +7,7 @@ Tree based algorithms were used for model buiilding starting with a Decision Tre
 
 Two models were built. The first, a baseline model which allowed me to determine baseline metrics without handling class imbalance and the second, a model built with class imbalance handled using class weights. Upon analysing results, the baseline model had an accuracy score of approximately 87% and a recall of just under 50% implying that it is not well suited to correctly identifying the positive cases (churn), making it unsuitable for the project objective. On the other hand, utilising class weights in the weighted model, I was able to increase recall to 83%, although accuracy dipped to 72%, the weighted model is therefore a better fit for the project objective.
 
-The prototyping is done on Jupyter Notebook complete with a step-by-step walk through and visualisations.
+Prototyping is done on Jupyter Notebook complete with a step-by-step walk through and visualisations.
 
 ## _TABLE OF CONTENTS_
 * __1.0 OVERVIEW__
