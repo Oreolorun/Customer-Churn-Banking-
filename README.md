@@ -3,7 +3,7 @@
 ## Project Overview
 In this project I built a classification model capable of predicting if a certain customer is likely to maintain his/her account with a bank or terminate said account based on certain attributes about the customer in question.
 
-Tree based algorithms were used for model buiilding starting with a Decision Tree Classifier which was optimised by pruning afterwhich a Random Forest Classifier was instantiated which utilized the benefits of using an ensemble of the pruned Decision Trees. The Random Forest Classifier was be optimised by tuning the n_estimators hyperparameter.
+Tree based algorithms were used for model buiilding starting with a Decision Tree Classifier which was optimised by pruning afterwhich a Random Forest Classifier was built which utilized the benefits of using an ensemble of the pruned Decision Trees. The Random Forest Classifier was then optimised by tuning the n_estimators hyperparameter.
 
 Two models were built. The first, a baseline model which allowed me to determine baseline metrics without handling class imbalance and the second, a model built with class imbalance handled using class weights. Upon analysing results, the baseline model had an accuracy score of approximately 87% and a recall of just under 50% implying that it is not well suited to correctly identifying the positive cases (churn), making it unsuitable for the project objective. On the other hand, utilising class weights in the weighted model, I was able to increase recall to 83%, although accuracy dipped to 72%, the weighted model is therefore a better fit for the project objective.
 
