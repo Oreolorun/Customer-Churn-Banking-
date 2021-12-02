@@ -60,6 +60,8 @@ Prototyping is done on Jupyter Notebook complete with a step-by-step walk throug
 * 9.2 Weighted Model
 * _9.2.1 Results_
 * _9.2.2 Metrics and Consusion Matrix Plots_
+* _9.3 Model Explanation_
+* _9.3.1 SHAP Plots_
 * __10.0 CONCLUSION__
 
 ![confusion_matrix](https://user-images.githubusercontent.com/92114396/142599544-fbcd8a25-1f05-40f4-89dd-4c374bb9c151.png)
