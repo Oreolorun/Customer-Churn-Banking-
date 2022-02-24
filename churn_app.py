@@ -34,7 +34,7 @@ st.sidebar.info(
 
 age = st.number_input('Age', step=1.0)
 num_products = st.number_input('Number of bank products/services used', step=1.0)
-cr_score = st.number_input('Credit score', step=1.0, min_value=300, max_value=850)
+cr_score = st.number_input('Credit score', step=1.0, min_value=300.0, max_value=850.0)
 country = st.selectbox('Country of residence', ['Germany', 'France', 'Spain'])
 acc_status = st.selectbox('Account status', ['Active', 'Inactive'])
 
