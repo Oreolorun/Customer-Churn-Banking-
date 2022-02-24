@@ -10,7 +10,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 import shap
 
-st.image('header.png', width=800)
+st.image('header.png', use_column_width='auto')
 
 st.info(
     """
