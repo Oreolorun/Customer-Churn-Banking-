@@ -14,7 +14,7 @@ st.image('header.png', use_column_width='auto')
 
 st.info(
     """
-    This app predicts if a certain customer is likely to stop doing business with an hypothetical bank based on
+    This app predicts if a certain customer is likely to stop doing business with a hypothetical bank based on
     attributes about the customer and their account usage.
     """
 )
