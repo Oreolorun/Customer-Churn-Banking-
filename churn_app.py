@@ -13,15 +13,14 @@ import shap
 st.image('header.png', use_column_width='auto')
 
 st.info(
-    """
+    f"""
     This app predicts if a certain customer is likely to stop doing business with a hypothetical bank based on
     attributes about the customer and their account usage.
     
     The underlying model was built in the Customer Churn Classification project and is based on the dataset used for
-    that project. 
+    that project. [see code]({'https://github.com/Oreolorun/Customer-Churn-Banking-'}). 
     """
 )
-st.write(f"[see code]{'https://github.com/Oreolorun/Customer-Churn-Banking-'}")
 
 st.sidebar.title('What is Customer Churn?')
 st.sidebar.image('graphic.png')
