@@ -13,9 +13,12 @@ import shap
 st.image('header.png', use_column_width='auto')
 
 st.info(
-    """
+    f"""
     This app predicts if a certain customer is likely to stop doing business with a hypothetical bank based on
     attributes about the customer and their account usage.
+    
+    The underlying model was built in the Customer Churn Classification project and is based on the dataset used for
+    that project. [see code]{'https://github.com/Oreolorun/Customer-Churn-Banking-'}
     """
 )
 
@@ -24,8 +27,8 @@ st.sidebar.image('graphic.png')
 st.sidebar.info(
     """
     Customer churn is defined as the loss of customers. Using machine learning and historical data, service providers
-    could identify customers most likely to stop using a service beforehand and selected for targeted marketing so as to
-    perhaps inspire them to stay. 
+    could identify customers most likely to stop using a service beforehand and select them for targeted marketing so as
+    to perhaps inspire them to stay. 
     """
 )
 
