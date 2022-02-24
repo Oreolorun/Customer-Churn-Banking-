@@ -106,10 +106,10 @@ def explain():
         """
         The plot above provides an insight as to why the underlying model as classified this customer as such.
         The customer's likelihood to terminate his/her account is highlighted in bold text as a probability with a value
-        greater than 0.5 (50%) meaning the customer is most likely going to terminate.
+        greater than 0.5 (50%) meaning the customer is most likely going to terminate his/her account.
         
         Attributes are color coded in the plot with red attributes being those that drive up the likelihood of
-        termination while blue attributes are those that drive down the likelihood of termination. The length of each
+        termination while blue attributes are those which drive down the likelihood of termination. The length of each
         attribute quantifies its contribution to the predicted class.
         
         ---
