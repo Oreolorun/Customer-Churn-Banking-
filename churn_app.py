@@ -10,12 +10,22 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 import shap
 
-st.title('Churn Prediction')
+st.image('header.png', width=800)
 
 st.info(
     """
-    This app predicts if a certain customer is likely to terminate their account with an hypothetical bank based on
+    This app predicts if a certain customer is likely to stop doing business with an hypothetical bank based on
     attributes about the customer and their account usage.
+    """
+)
+
+st.sidebar.title('What is Customer Churn?')
+st.sidebar.image('graphic.png')
+st.sidebar.info(
+    """
+    Customer churn is defined as the loss of customers. Using machine learning and historical data, service providers
+    could identify customers most likely to stop using a service beforehand and selected for targeted marketing so as to
+    perhaps inspire them to stay. 
     """
 )
 
@@ -101,6 +111,14 @@ def explain():
         Attributes are color coded in the plot with red attributes being those that drive up the likelihood of
         termination while blue attributes are those that drive down the likelihood of termination. The length of each
         attribute quantifies its contribution to the predicted class.
+        
+        ---
+        ###### Key:
+        * Age - Age
+        * Number of bank products - NumOfProducts
+        * Credit Score - CreditScore
+        * Country of Residence - Geography
+        * Account Status - IsActiveMember (Yes - 1, No - 0)
         """
     )
 
