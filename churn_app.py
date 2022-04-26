@@ -10,7 +10,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 import shap
 
-st.image('header.png', use_column_width='auto')
+st.image('images/header.png', use_column_width='auto')
 
 st.info(
     f"""
@@ -23,7 +23,7 @@ st.info(
 )
 
 st.sidebar.title('What is Customer Churn?')
-st.sidebar.image('graphic.png')
+st.sidebar.image('images/graphic.png')
 st.sidebar.info(
     """
     Customer churn is defined as the loss of customers. Using machine learning and historical data, service providers
@@ -47,7 +47,7 @@ process = st.button('Process')
 
 
 def load_pipeline():
-    pipeline = joblib.load('customer_churn.pkl')
+    pipeline = joblib.load('model/customer_churn.pkl')
     return pipeline
 
 
@@ -94,7 +94,7 @@ def plot_shap():
     #  loading pipeline
     pipeline = load_pipeline()
     #  reading mask
-    mask = pd.read_csv('churn_mask.csv')
+    mask = pd.read_csv('datasets/churn_mask.csv')
     #  Creating object to calculate shap values
     explainer = shap.TreeExplainer(pipeline[-1], pipeline[0].transform(mask))
     #  Calculating shap values
